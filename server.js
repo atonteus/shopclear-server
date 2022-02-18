@@ -32,3 +32,14 @@ function addNewUser(newUser) {
     })
     .catch(error => console.error(error));
 }
+
+function a(newUser) {
+
+  axios.post(url, newUser)
+    .then(response => {
+      alert(JSON.stringify(response.data))
+      getUsers()
+    })
+    .catch(error => console.error(error));
+}
+
